@@ -23,12 +23,18 @@ public class Rec {
 	
     /** = a copy of s with to_remove_char removed.
 		Example: removeChar("abeabe", 'e') = "abab". */
-	public static String removeChar(String s, char to_remove_char) {
-	
-	// fill me in
-	
-	}
-	
+    public static String  RemoveChars(String s, String c)
+    {
+        String aa[] = new String[99];
+        aa = s.split(c);
+        String b = "";
+        for(int i = 0 ;i<aa.length ; i++){
+            b += a[i];
+        }
+        return b;
+
+    }
+
     /** = a copy of s with characters in reverse order.
 		Example: reverse("abcdefg") = "gfedcba". */
 	public static String reverse(String s) {
