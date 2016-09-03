@@ -7,9 +7,12 @@ public class Rec {
 		numDigits(1356) = 4.
 		Precondition: n >= 0. */
     public static int numDigits(int n) {
-	
-	// fill me in
-	
+       if ((n < 10) && (n > -10)) return 1;
+        return 1 + numDigits(n/10);
+
+    }
+    public static void main(String[]args){
+
     }
 
     /** = sum of the digits in the decimal representation of n.
